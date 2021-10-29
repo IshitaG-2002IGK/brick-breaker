@@ -8,7 +8,7 @@ public class Main {
 		Gameplay gamePlay = new Gameplay();
 		
 		obj.setBounds(10, 10, 700, 600);
-		obj.setTitle("Breakout Ball");		
+		obj.setTitle("Brick-Breaker, Created by : Ishita G - 312320104053");		
 		obj.setResizable(false);
 		obj.setVisible(true);
 		obj.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

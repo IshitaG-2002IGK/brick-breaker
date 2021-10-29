@@ -47,7 +47,7 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
 		map.draw((Graphics2D) g);
 		
 		// borders
-		g.setColor(Color.yellow);
+		g.setColor(Color.magenta);
 		g.fillRect(0, 0, 3, 592);
 		g.fillRect(0, 0, 692, 3);
 		g.fillRect(691, 0, 3, 592);
@@ -58,11 +58,11 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
 		g.drawString(""+score, 590,30);
 		
 		// the paddle
-		g.setColor(Color.green);
+		g.setColor(Color.cyan);
 		g.fillRect(playerX, 550, 100, 8);
 		
 		// the ball
-		g.setColor(Color.yellow);
+		g.setColor(Color.red);
 		g.fillOval(ballposX, ballposY, 20, 20);
 	
 		// when you won the game
@@ -73,11 +73,11 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
      		 ballYdir = 0;
              g.setColor(Color.RED);
              g.setFont(new Font("serif",Font.BOLD, 30));
-             g.drawString("You Won", 260,300);
+             g.drawString("Congrats,You Won !!!", 260,300);
              
              g.setColor(Color.RED);
              g.setFont(new Font("serif",Font.BOLD, 20));           
-             g.drawString("Press (Enter) to Restart", 230,350);  
+             g.drawString("Click <Enter> to Restart the Game!", 230,350);  
 		}
 		
 		// when you lose the game
@@ -86,13 +86,13 @@ public class Gameplay extends JPanel implements KeyListener, ActionListener
 			 play = false;
              ballXdir = 0;
      		 ballYdir = 0;
-             g.setColor(Color.RED);
+             g.setColor(Color.BLUE);
              g.setFont(new Font("serif",Font.BOLD, 30));
-             g.drawString("Game Over, Scores: "+score, 190,300);
+             g.drawString("Game Over, Scores are: "+score, 190,300);
              
-             g.setColor(Color.RED);
+             g.setColor(Color.BLUE);
              g.setFont(new Font("serif",Font.BOLD, 20));           
-             g.drawString("Press (Enter) to Restart", 230,350);        
+             g.drawString("Click <Enter> to Restart", 230,350);        
         }
 		
 		g.dispose();
